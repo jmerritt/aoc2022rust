@@ -2,8 +2,7 @@ use std::fs;
 
 fn main() {
     // get the stuff with the things
-    let file = fs::read_to_string("input.txt")
-        .expect("couldn't read file");
+    let file = fs::read_to_string("input.txt").expect("couldn't read file");
 
     // initialize things
     let mut sum: u32 = 0;
@@ -20,11 +19,17 @@ fn main() {
     }
 
     // part one answer
-    println!("the elf with the most cals is: {:#?}", sums.iter().max().unwrap());
+    println!(
+        "the elf with the most cals is: {:#?}",
+        sums.iter().max().unwrap()
+    );
 
     sums.sort();
     sums.reverse();
 
     // part two answer
-    println!("the top three elves total: {:#?}", sums[..3].iter().sum::<u32>());
+    println!(
+        "the top three elves total: {:#?}",
+        sums[..3].iter().sum::<u32>()
+    );
 }
