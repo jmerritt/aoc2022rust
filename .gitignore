@@ -1,6 +1,8 @@
 aoc01/target
 aoc02/target
 aoc03/target
+aoc04/target
 aoc01/Cargo.lock
 aoc02/Cargo.lock
 aoc03/Cargo.lock
+aoc04/Cargo.lock
